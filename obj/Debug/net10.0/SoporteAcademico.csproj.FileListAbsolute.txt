@@ -1,0 +1,14 @@
+C:\Users\DANIELA\SoporteAcademico\bin\Debug\net10.0\SoporteAcademico.exe
+C:\Users\DANIELA\SoporteAcademico\bin\Debug\net10.0\SoporteAcademico.deps.json
+C:\Users\DANIELA\SoporteAcademico\bin\Debug\net10.0\SoporteAcademico.runtimeconfig.json
+C:\Users\DANIELA\SoporteAcademico\bin\Debug\net10.0\SoporteAcademico.dll
+C:\Users\DANIELA\SoporteAcademico\bin\Debug\net10.0\SoporteAcademico.pdb
+C:\Users\DANIELA\SoporteAcademico\obj\Debug\net10.0\SoporteAcademico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DANIELA\SoporteAcademico\obj\Debug\net10.0\SoporteAcademico.AssemblyInfoInputs.cache
+C:\Users\DANIELA\SoporteAcademico\obj\Debug\net10.0\SoporteAcademico.AssemblyInfo.cs
+C:\Users\DANIELA\SoporteAcademico\obj\Debug\net10.0\SoporteAcademico.csproj.CoreCompileInputs.cache
+C:\Users\DANIELA\SoporteAcademico\obj\Debug\net10.0\SoporteAcademico.dll
+C:\Users\DANIELA\SoporteAcademico\obj\Debug\net10.0\refint\SoporteAcademico.dll
+C:\Users\DANIELA\SoporteAcademico\obj\Debug\net10.0\SoporteAcademico.pdb
+C:\Users\DANIELA\SoporteAcademico\obj\Debug\net10.0\SoporteAcademico.genruntimeconfig.cache
+C:\Users\DANIELA\SoporteAcademico\obj\Debug\net10.0\ref\SoporteAcademico.dll
