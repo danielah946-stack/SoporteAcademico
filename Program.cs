@@ -64,7 +64,12 @@ class Program
         }
     }
 
+// Requerimiento 6
+static bool ValidarTextoObligatorio(string texto)
+     {
+        return !string.IsNullOrWhiteSpace(texto);
 
+     }
     static void Main(string[] args)
     {
         Console.WriteLine("--- Modulo de Soporte Academico --- ");
@@ -103,10 +108,21 @@ class Program
             // reguirimiento 5
              string prioridad = CalcularPrioridad(tipo);
              Console.WriteLine("Prioridad asignada: " + prioridad);
-           
+           //Requerimiento 6
+           string descripcion ="";
+           while(true)
+        {
             Console.WriteLine("Ingresa la descripcion breve: ");
-            string descripcion= Console.ReadLine();
+            descripcion= Console.ReadLine();
+
+            if (ValidarTextoObligatorio(descripcion))
+            {
+                break;
+            }
+            Console.WriteLine("[Error] La descripcion  no puede estar vacia. Intentalo de nuevo.");
            
+        }
+            
             Console.WriteLine("\n[exito] Codigo y datos registrados correctamente");
     }
     }
