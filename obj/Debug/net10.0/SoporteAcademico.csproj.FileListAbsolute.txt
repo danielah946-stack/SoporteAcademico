@@ -12,3 +12,4 @@ C:\Users\DANIELA\SoporteAcademico\obj\Debug\net10.0\refint\SoporteAcademico.dll
 C:\Users\DANIELA\SoporteAcademico\obj\Debug\net10.0\SoporteAcademico.pdb
 C:\Users\DANIELA\SoporteAcademico\obj\Debug\net10.0\SoporteAcademico.genruntimeconfig.cache
 C:\Users\DANIELA\SoporteAcademico\obj\Debug\net10.0\ref\SoporteAcademico.dll
+C:\Users\DANIELA\SoporteAcademico\obj\Debug\net10.0\SoporteAcademico.sourcelink.json
