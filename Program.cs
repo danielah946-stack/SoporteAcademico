@@ -30,7 +30,7 @@ class Program
         {
             return false;
         }
-        string tipoNormalizado = tipo.Trim().ToLower();
+        string tipoNormalizado = tipo.Trim().ToLower();    // interno ValidarTipoConsulta
 
 
         switch (tipoNormalizado)
@@ -48,7 +48,7 @@ class Program
    //Requerimiento 5
    static string CalcularPrioridad(string tipo)
     {
-        string tipoNormalizado= tipo.Trim(). ToLower();
+        string tipoNormalizado= tipo.Trim(). ToLower();  // interni calcularPrioridad
         switch(tipoNormalizado)
         {
             case "pagos":
@@ -89,7 +89,7 @@ static bool ValidarTextoObligatorio(string texto)
         Console.WriteLine("--- Modulo de Soporte Academico --- ");
        
         //Requerimiento 2
-        string codigo ="";
+        string codigo ="";    // del Main
        
         while(true)
         {
@@ -107,7 +107,7 @@ static bool ValidarTextoObligatorio(string texto)
             string nombre = Console.ReadLine();
            
             // Requerimiento 3
-            string tipo= "";
+            string tipo= "";         // del Main
             while (true)
             {
                 Console.WriteLine("Ingresa el tipo de consulta: ");
@@ -123,7 +123,7 @@ static bool ValidarTextoObligatorio(string texto)
              string prioridad = CalcularPrioridad(tipo);
              Console.WriteLine("Prioridad asignada: " + prioridad);
            //Requerimiento 6
-           string descripcion ="";
+           string descripcion ="";   // del Main
            while(true)
         {
             Console.WriteLine("Ingresa la descripcion breve: ");
