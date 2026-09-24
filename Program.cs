@@ -1,89 +1,16 @@
-﻿using System;
-class Program
+﻿static void MostrarMenu()
 {
+    Console.WriteLine("\n========================================");
+    Console.WriteLine("   SISTEMA DE SOPORTE ACADEMICO");
+    Console.WriteLine("========================================");
+}
+static void Main(string[] args)
+{
+    // Llamamos a la función sin retorno para que dibuje el menú en pantalla
+    MostrarMenu();
 
-    static bool ValidarCodigo(string codigo)
-    {
-        if (string.IsNullOrWhiteSpace(codigo) || codigo.Length !=9)
-        {
-            return false;
-        }
-
-        string codigoMayus= codigo.ToUpper();
-        if(codigoMayus.StartsWith("N00"))
-        {
-            return true;
-        }
-        return false;
-    }    
-
-    static bool ValidarTipoConsulta(string tipo)
-    {
-        string[] tipoPermitido= { "matricula", "pagos", "plataforma", "constancia"};
-
-        if(string.IsNullOrWhiteSpace(tipo))
-        {
-            return false;
-        }
-        string tipoNormalizado = tipo.Trim().ToLower();
-
-        switch (tipoNormalizado)
-        {
-           case "matricula":
-           case "pagos":
-           case "constancia":
-           case "plataforma":
-            return true;
-        default:
-            return false; 
-            
-        } 
-    }    
-    
-
-    static void Main(string[] args)
-    {
-        Console.WriteLine("--- Modulo de Soporte Academico --- ");
-        
-        //Requerimiento 2
-        string codigo ="";
-        
-        while(true)
-        {
-            Console.WriteLine("Ingresa el codigo de estudiante: ");
-            codigo = Console.ReadLine();
-            
-            if(ValidarCodigo(codigo))
-            {
-                break;
-            }
-            Console.WriteLine("[Error] El codigo debe tener exactamente 9 caracteres y empezar obligatoriamente con 'N00'. ");
-        }
-            
-            Console.WriteLine("Ingresa el nombre del estudiante: ");
-            string nombre = Console.ReadLine();
-            
-            // Requerimiento 3
-            string tipo= "";
-            while (true)
-            {
-                Console.WriteLine("Ingresa el tipo de consulta: ");
-                tipo= Console.ReadLine();
-                
-                if(ValidarTipoConsulta(tipo))
-                {
-                     break;
-                }
-                Console.WriteLine("[Error] El tipo de consulta no es válido. Debe ser uno de la lista permitida.");
-            }
-            
-            Console.WriteLine("Ingresa la descripcion breve: ");
-            string descripcion= Console.ReadLine();
-            
-            Console.WriteLine("\n[exito] Codigo y datos registrados correctamente");
-    }
-    }
-
+    // Aquí abajo continuaría el resto de tu código...
+}
 
 
 
