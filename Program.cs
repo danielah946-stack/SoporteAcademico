@@ -70,6 +70,20 @@ static bool ValidarTextoObligatorio(string texto)
         return !string.IsNullOrWhiteSpace(texto);
 
      }
+
+// Requerimiento 7
+     static void MostrarResumen(string codigo, string nombre, string tipo, string descripcion, string prioridad)
+    {
+        Console.WriteLine("\n========================================");
+        Console.WriteLine("       RESUMEN DE LA SOLICITUD          ");
+        Console.WriteLine("========================================");
+        Console.WriteLine($" Código de estudiante : {codigo}");
+        Console.WriteLine($" Nombre del estudiante: {nombre}");
+        Console.WriteLine($" Tipo de consulta     : {tipo}");
+        Console.WriteLine($" Descripción          : {descripcion}");
+        Console.WriteLine($" Prioridad asignada   : {prioridad}");
+        Console.WriteLine("========================================");
+    } 
     static void Main(string[] args)
     {
         Console.WriteLine("--- Modulo de Soporte Academico --- ");
@@ -124,7 +138,13 @@ static bool ValidarTextoObligatorio(string texto)
         }
             
             Console.WriteLine("\n[exito] Codigo y datos registrados correctamente");
+            
+             MostrarResumen(codigo, nombre, tipo, descripcion, prioridad);
     }
-    }
+
+}
+
+
+    
 
 
