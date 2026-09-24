@@ -39,6 +39,7 @@ class Program
            case "pagos":
            case "constancia":
            case "plataforma":
+           case "otros":
             return true;
         default:
             return false;
@@ -59,6 +60,7 @@ class Program
                 return "Media";
             case "plataforma":
                 return "Media";
+            case "otro":
             default:
                 return "Sin definir";
         }
@@ -87,7 +89,15 @@ static bool ValidarTextoObligatorio(string texto)
     static void Main(string[] args)
     {
         Console.WriteLine("--- Modulo de Soporte Academico --- ");
-       
+
+        //Requerimiento 10: bucle 
+        for (int i=1; i<= 3; i++)
+        {
+           Console.WriteLine($"\n----------------------------------------");
+           Console.WriteLine($"       REGISTRO DE SOLICITUD {i} de 3    ");
+           Console.WriteLine($"----------------------------------------"); 
+        
+    
         //Requerimiento 2
         string codigo ="";    // del Main
        
@@ -141,7 +151,8 @@ static bool ValidarTextoObligatorio(string texto)
             
              MostrarResumen(codigo, nombre, tipo, descripcion, prioridad);
     }
-
+     Console.WriteLine("\n=== Se han completado las 3 solicitudes requeridas con éxito ===");
+    }
 }
 
 
